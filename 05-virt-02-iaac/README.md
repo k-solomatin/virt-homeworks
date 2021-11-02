@@ -53,7 +53,7 @@ docker ps
   !photo(ans.png)
 
 2.  
-3.  
+3.  s
 ![Ansible](ans.png)
 ![Vagrant](vg.png)
 ![VirtualBox](virt.png)
