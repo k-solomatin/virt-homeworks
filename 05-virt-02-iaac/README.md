@@ -53,7 +53,8 @@ docker ps
   !photo(ans.png)
 
 2.  
-3.  s
+  На мой взгляд более еффективный это pull модель.
+3.  Скрины  
 ![Ansible](ans.png)
 ![Vagrant](vg.png)
 ![VirtualBox](virt.png)
