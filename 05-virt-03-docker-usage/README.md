@@ -1,6 +1,6 @@
 # Домашнее задание к занятию "5.3. Контейнеризация на примере Docker"
 1.  
-~/Docker ❯ docker run  -d -p 83:80 nginx                                       
+```~/Docker ❯ docker run  -d -p 83:80 nginx   ```                                    
 8f15570062955269edb483fc5c1d2f2db49ca28cd37524e95241c9062641ab80  
 ~/Docker ❯ docker ps  
 CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS         PORTS                NAMES  
