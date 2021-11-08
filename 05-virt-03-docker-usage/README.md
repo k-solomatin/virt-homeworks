@@ -19,5 +19,9 @@ f8e880dfc4ef: Mounted from library/nginx
 e81bff2725db: Mounted from library/nginx  
 0.0.1: digest: sha256:7250923ba3543110040462388756ef099331822c6172a050b12c7a38361ea46f size: 1570  
 ![Docker](hub.png)  
- ```https://hub.docker.com/r/astkam/nginx/tags``` 
+ ```https://hub.docker.com/r/astkam/nginx/tags```   
+
 2.  
+Высоконагруженное монолитное java веб-приложение;  
+ >> физический сервер,  монолитное, следовательно в микросерверах не реализуемо без изменения кода,  
+   и так как высоконагруженное -  то необходим физический доступ к ресурсами.  
