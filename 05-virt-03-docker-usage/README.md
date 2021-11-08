@@ -8,3 +8,15 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS       
 ~/Docker ❯ docker exec -it 8f1557006295 bash  
 root@8f1557006295:/usr/share/nginx/html# vim index.html  
 ![Docker](d1.png)  
+tag nginx astkam/nginx:0.0.1  
+~/Docker ❯ docker push astkam/nginx:0.0.1  
+The push refers to repository [docker.io/astkam/nginx]  
+9959a332cf6e: Mounted from library/nginx  
+f7e00b807643: Mounted from library/nginx  
+f8e880dfc4ef: Mounted from library/nginx  
+788e89a4d186: Mounted from library/nginx  
+43f4e41372e4: Mounted from library/nginx  
+e81bff2725db: Mounted from library/nginx  
+0.0.1: digest: sha256:7250923ba3543110040462388756ef099331822c6172a050b12c7a38361ea46f size: 1570  
+![Docker](hub.png)  
+2.  
