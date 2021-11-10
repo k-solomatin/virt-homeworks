@@ -41,9 +41,11 @@ e81bff2725db: Mounted from library/nginx
 ```Gitlab сервер для реализации CI/CD процессов и приватный (закрытый) Docker Registry```  
    Погуглил и нашел несколько статей где ставят это добро в докер и не знают проблем это самое рациональное решение.      
 3.  
-Запустим образ с Centos и Debian    
+Запу(ст,л)им образ с Centos и Debian    
 ![Docker](doc.png)  
 Подключились к Centos и создали файл  
 ![Docker](cent.png)  
 Создали файлик с хоста  
 ![Docker](mac.png)   
+Посмотрим с дебиана  
+![Docker](deb.png)
