@@ -44,4 +44,6 @@ e81bff2725db: Mounted from library/nginx
 Запустим образ с Centos и Debian    
 ![Docker](doc.png)  
 Подключились к Centos и создали файл  
-![Docker](cent.png)
+![Docker](cent.png)  
+Создали файлик с хоста  
+![Docker](mac.png)   
