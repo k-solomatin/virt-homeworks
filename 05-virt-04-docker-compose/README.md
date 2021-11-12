@@ -44,6 +44,4 @@
 ## Домашня работа!
 
 ## Задача 1
-<p align="center">
-  <img width="1200" height="600" src="1.png">
-</p>
+![Obraz](1.png)  
