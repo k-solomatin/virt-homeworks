@@ -2,14 +2,14 @@
 
 ## Введение
 
-Перед выполнением задания вы можете ознакомиться с 
+Перед выполнением задания вы можете ознакомиться с
 [дополнительными материалами](https://github.com/netology-code/virt-homeworks/tree/master/additional/README.md).
 
 ## Задача 1
 
 Используя docker поднимите инстанс MySQL (версию 8). Данные БД сохраните в volume.
 
-Изучите [бэкап БД](https://github.com/netology-code/virt-homeworks/tree/master/06-db-03-mysql/test_data) и 
+Изучите [бэкап БД](https://github.com/netology-code/virt-homeworks/tree/master/06-db-03-mysql/test_data) и
 восстановитесь из него.
 
 Перейдите в управляющую консоль `mysql` внутри контейнера.
@@ -28,16 +28,16 @@
 
 Создайте пользователя test в БД c паролем test-pass, используя:
 - плагин авторизации mysql_native_password
-- срок истечения пароля - 180 дней 
-- количество попыток авторизации - 3 
+- срок истечения пароля - 180 дней
+- количество попыток авторизации - 3
 - максимальное количество запросов в час - 100
 - аттрибуты пользователя:
     - Фамилия "Pretty"
     - Имя "James"
 
 Предоставьте привелегии пользователю `test` на операции SELECT базы `test_db`.
-    
-Используя таблицу INFORMATION_SCHEMA.USER_ATTRIBUTES получите данные по пользователю `test` и 
+
+Используя таблицу INFORMATION_SCHEMA.USER_ATTRIBUTES получите данные по пользователю `test` и
 **приведите в ответе к задаче**.
 
 ## Задача 3
@@ -51,7 +51,7 @@
 - на `MyISAM`
 - на `InnoDB`
 
-## Задача 4 
+## Задача 4
 
 Изучите файл `my.cnf` в директории /etc/mysql.
 
@@ -66,8 +66,14 @@
 
 ---
 
-### Как оформить ДЗ?
+### Решение
+docker pull mysql:8.0  
+docker volume create vol_mysql  
+docker run --rm --name mysql-docker -e MYSQL_ROOT_PASSWORD=mysql -ti -p 3306:3306 -v vol_mysql:/etc/mysql/ mysql:8.0  
+![Obraz](1.png)
+use temp_db;  
+show tables;  
+select count(*) from orders where price >300;  
 
-Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
 
 ---
