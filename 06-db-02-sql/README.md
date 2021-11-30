@@ -164,3 +164,6 @@ update  clients set booking = 5 where id = 3;
 ![Obraz](7.png)  
 
 ![Obraz](8.png)  
+
+## Задание 5  
+![Obraz](9.png)  
