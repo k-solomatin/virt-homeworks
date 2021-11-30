@@ -155,4 +155,4 @@ GRANT DELETE ON TABLE public.orders TO "test-simple-user";
 
 ## Задание 3
 
-  
+  ![Obraz](6.png)
