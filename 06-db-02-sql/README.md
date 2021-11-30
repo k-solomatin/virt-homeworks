@@ -152,3 +152,7 @@ GRANT DELETE ON TABLE public.orders TO "test-simple-user";
 ![Obraz](3.png)
 ![Obraz](4.png)
 ![Obraz](5.png)
+
+## Задание 3
+
+  
