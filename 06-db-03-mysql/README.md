@@ -67,10 +67,12 @@
 ---
 
 ### Решение
+## Задача 1
+
 docker pull mysql:8.0  
 docker volume create vol_mysql  
 docker run --rm --name mysql-docker -e MYSQL_ROOT_PASSWORD=mysql -ti -p 3306:3306 -v vol_mysql:/etc/mysql/ mysql:8.0  
-![Obraz](1.png)
+![Obraz](1.png)  
 use temp_db;  
 show tables;  
 select count(*) from orders where price >300;  
