@@ -162,4 +162,5 @@ update  clients set booking = 3 where id = 1;
 update  clients set booking = 4 where id = 2;  
 update  clients set booking = 5 where id = 3;  
 ![Obraz](7.png)  
-postgres=# select clients.lastname,orders.name from clients,orders where clients.booking=orders.id;  
+
+![Obraz](8.png)  
