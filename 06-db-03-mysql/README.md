@@ -76,6 +76,30 @@ docker run --rm --name mysql-docker -e MYSQL_ROOT_PASSWORD=mysql -ti -p 3306:330
 use temp_db;  
 show tables;  
 select count(*) from orders where price >300;  
+## Задача 2  
+mysql> CREATE USER 'test'@'localhost' IDENTIFIED BY 'test-pass';  
+Query OK, 0 rows affected (0.02 sec)  
 
+mysql> ALTER USER 'test'@'localhost' ATTRIBUTE '{"fname":"James", "lname":"Pretty"}';  
+Query OK, 0 rows affected (0.00 sec)  
+
+mysql> ALTER USER 'test'@'localhost'  
+    -> IDENTIFIED BY 'test-pass'  
+    -> WITH  
+    -> MAX_QUERIES_PER_HOUR 100  
+    -> PASSWORD EXPIRE INTERVAL 180 DAY  
+    -> FAILED_LOGIN_ATTEMPTS 3 PASSWORD_LOCK_TIME 2;  
+Query OK, 0 rows affected (0.00 sec)  
+
+mysql> GRANT SELECT ON temp_db.orders TO 'test'@'localhost';  
+Query OK, 0 rows affected, 1 warning (0.00 sec)  
+
+mysql> SELECT * FROM INFORMATION_SCHEMA.USER_ATTRIBUTES WHERE USER='test';  
++------+-----------+---------------------------------------+  
+| USER | HOST      | ATTRIBUTE                             |  
++------+-----------+---------------------------------------+  
+| test | localhost | {"fname": "James", "lname": "Pretty"} |  
++------+-----------+---------------------------------------+  
+1 row in set (0.00 sec)  
 
 ---
