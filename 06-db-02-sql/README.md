@@ -116,3 +116,6 @@
 ```docker run --rm --name pg-docker -e POSTGRES_PASSWORD=postgres -ti -p 5432:5432 -v vol1:/var/lib/postgresql/data -v vol2:/var/lib/postgresql postgres:12 ```  
 ![Obraz](1.png)
 ---
+## Задание 2  
+
+  
