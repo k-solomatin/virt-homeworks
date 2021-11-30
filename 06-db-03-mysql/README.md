@@ -102,4 +102,40 @@ mysql> SELECT * FROM INFORMATION_SCHEMA.USER_ATTRIBUTES WHERE USER='test';
 +------+-----------+---------------------------------------+  
 1 row in set (0.00 sec)  
 
+## Задача 2  
+
+mysql> SELECT TABLE_NAME,ENGINE,ROW_FORMAT,TABLE_ROWS,DATA_LENGTH,INDEX_LENGTH FROM information_schema.TABLES   WHERE table_name = 'orders'  
+and  TABLE_SCHEMA = 'temp_db' ORDER BY ENGINE asc;  
++------------+--------+------------+------------+-------------+--------------+  
+| TABLE_NAME | ENGINE | ROW_FORMAT | TABLE_ROWS | DATA_LENGTH | INDEX_LENGTH |  
++------------+--------+------------+------------+-------------+--------------+  
+| orders     | InnoDB | Dynamic    |          5 |       16384 |            0 |  
++------------+--------+------------+------------+-------------+--------------+  
+1 row in set (0.00 sec)  
+
+##Задача 3
+
+mysql> SET profiling = 1;  
+Query OK, 0 rows affected, 1 warning (0.00 sec)  
+
+mysql> ALTER TABLE orders ENGINE = MyISAM;  
+Query OK, 5 rows affected (0.02 sec)  
+Records: 5  Duplicates: 0  Warnings: 0  
+
+mysql> ALTER TABLE orders ENGINE = InnoDB;  
+Query OK, 5 rows affected (0.03 sec)  
+Records: 5  Duplicates: 0  Warnings: 0  
+
+mysql> SHOW PROFILES;  
++----------+------------+------------------------------------+  
+| Query_ID | Duration   | Query                              |  
++----------+------------+------------------------------------+  
+|        1 | 0.00017025 | SET profiling = 1                  |  
+|        2 | 0.02544525 | ALTER TABLE orders ENGINE = MyISAM |  
+|        3 | 0.03517400 | ALTER TABLE orders ENGINE = InnoDB |  
++----------+------------+------------------------------------+  
+3 rows in set, 1 warning (0.00 sec)  
+
+
+
 ---
