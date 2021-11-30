@@ -136,7 +136,8 @@ mysql> SHOW PROFILES;
 +----------+------------+------------------------------------+  
 3 rows in set, 1 warning (0.00 sec)  
 
-##Задача 4
+##Задача 4  
+
 [mysqld]
 pid-file        = /var/run/mysqld/mysqld.pid
 socket          = /var/run/mysqld/mysqld.sock
