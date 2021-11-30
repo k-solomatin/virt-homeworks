@@ -169,3 +169,35 @@ update  clients set booking = 5 where id = 3;
 ![Obraz](9.png)   
 Показывает стоимость нагрузки выполнения запросов.  
 При объединении таблиц запрос тяжелее.  
+
+## Задание 6
+docker exec -t pgre-docker pg_dump -U postgres test_db -f /var/lib/postgresql/data/dump_test.sql  
+docker exec -i pgre-docker2 psql -U postgres -d test_db -f /var/lib/postgresql/data/dump_test.sql  
+
+SET  
+SET  
+SET  
+SET  
+SET  
+ set_config   
+------------  
+
+(1 row)  
+
+SET  
+SET  
+SET  
+SET  
+SET  
+SET  
+CREATE TABLE  
+ALTER TABLE  
+CREATE TABLE  
+ALTER TABLE  
+COPY 5  
+COPY 5  
+ALTER TABLE  
+ALTER TABLE  
+ALTER TABLE  
+GRANT  
+GRANT  
