@@ -136,6 +136,19 @@ mysql> SHOW PROFILES;
 +----------+------------+------------------------------------+  
 3 rows in set, 1 warning (0.00 sec)  
 
+##Задача 4
+[mysqld]
+pid-file        = /var/run/mysqld/mysqld.pid
+socket          = /var/run/mysqld/mysqld.sock
+datadir         = /var/lib/mysql
+secure-file-priv= NULL
 
+# Custom config should go here  
 
+!includedir /etc/mysql/conf.d/  
+innodb_flush_log_at_trx_commit = 0  
+innodb_file_format = Barracuda  
+innodb_log_buffer_size = 1M  
+key_buffer_size = 640M  
+max_binlog_size = 100M  
 ---
