@@ -143,7 +143,6 @@ socket          = /var/run/mysqld/mysqld.sock
 datadir         = /var/lib/mysql
 secure-file-priv= NULL
 
-# Custom config should go here  
 
 !includedir /etc/mysql/conf.d/  
 innodb_flush_log_at_trx_commit = 0  
