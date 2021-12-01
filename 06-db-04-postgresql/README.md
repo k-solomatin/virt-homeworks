@@ -66,7 +66,7 @@
 
 ## Задача 2  
 Создание БД ```CREATE DATABASE test_database;```  
-Востановим бекап ```psql -U postgres -f ./pg_backup.sql test_database```
+Востановим бекап ```psql -U postgres -f ./pg_backup.sql test_database```  
 Зайдем в БД   
 postgres=# \c test_database  
 Password:   
