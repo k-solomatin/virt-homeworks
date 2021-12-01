@@ -91,6 +91,7 @@ test_database=# select avg_width from pg_stats where tablename='orders';
          4  
 (3 rows)  
 
+## Задача 2  
 
 
 
