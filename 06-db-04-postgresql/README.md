@@ -50,12 +50,15 @@
 
 ---
 
-### Решение
+# Решение
 
 ## Задача 1  
 ```docker pull postgres:13```  
 ```docker volume create vol_postgres```  
-
+```run --rm --name pg-docker -e POSTGRES_PASSWORD=postgres -ti -p 5432:5432 -v vol_postgres:/var/lib/postgresql/data postgres:13```  
+```docker exec -it pg-docker bash```  
+```psql -h localhost -p 5432 -U postgres -W```  
+Список БД ```\l```
 
 
 
