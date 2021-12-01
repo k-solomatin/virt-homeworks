@@ -91,10 +91,25 @@ test_database=# select avg_width from pg_stats where tablename='orders';
          4  
 (3 rows)  
 
-## Задача 2  
+## Задача 3  
 
+Для начала нужно преобразовать существующую таблицу в партиционированную, поэтому пересоздадим таблицу  
+test_database=# alter table orders rename to orders_simple;  
+ALTER TABLE  
+test_database=# create table orders (id integer, title varchar(80), price integer) partition by range(price);  
+CREATE TABLE  
+test_database=# create table orders_less499 partition of orders for values from (0) to (499);  
+CREATE TABLE  
+test_database=# create table orders_more499 partition of orders for values from (499) to (999999999);  
+CREATE TABLE  
+test_database=# insert into orders (id, title, price) select * from orders_simple;  
+INSERT 0 8  
+test_database=#   
+С самого начала, можно было сделать ее секционированной, тогда не пришлось бы переименовывать исходную таблицу и переносить данные в новую.
 
+##Задача 4  
 
-
-
----
+pg_dump -U postgres -d test_database >database_dump.sql  
+Для уникальности можно добавить индекс или первичный ключ.  
+    CREATE INDEX ON orders ((lower(title)));  
+---  
