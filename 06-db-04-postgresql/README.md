@@ -65,6 +65,7 @@
 Выход из psql ```\q```  
 
 ## Задача 2
+Создание БД ```CREATE DATABASE test_database;```  
 
 
 
