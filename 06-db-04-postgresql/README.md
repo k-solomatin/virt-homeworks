@@ -53,8 +53,8 @@
 ### Решение
 
 ## Задача 1  
-```docker pull postgres:13```
-
+```docker pull postgres:13```  
+```docker volume create vol_postgres```  
 
 
 
