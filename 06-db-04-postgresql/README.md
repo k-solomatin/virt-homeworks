@@ -58,7 +58,15 @@
 ```run --rm --name pg-docker -e POSTGRES_PASSWORD=postgres -ti -p 5432:5432 -v vol_postgres:/var/lib/postgresql/data postgres:13```  
 ```docker exec -it pg-docker bash```  
 ```psql -h localhost -p 5432 -U postgres -W```  
-Список БД ```\l```
+Список БД ```\l```  
+Подключение к БД ```\c postgres```   
+Вывод списка таблиц ```\dtS```  
+Вывод описания содержимого таблиц ```\dS+ pg_index```  
+Выход из psql ```\q```  
+
+## Задача 2
+
+
 
 
 
