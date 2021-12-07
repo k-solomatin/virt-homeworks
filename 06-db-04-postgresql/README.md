@@ -64,4 +64,6 @@ test_database=#
 pg_dump -U postgres -d test_database >database_dump.sql  
 Для уникальности можно добавить индекс или первичный ключ.  
     CREATE INDEX ON orders ((lower(title)));  
+  Доработка.  
+  CREATE unique INDEX briz ON test_database (title);
 ---  
