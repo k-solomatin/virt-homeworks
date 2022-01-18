@@ -74,7 +74,7 @@ Terraform will perform the following actions:
       \+ subnet_id                    = (known after apply)  
       \+ tags                         = {  
           \+ "Name" = "HelloWorld"  
-        }  
+        \}  
       \+ tenancy                      = (known after apply)  
       \+ vpc_security_group_ids       = (known after apply)  
 
