@@ -45,7 +45,7 @@ Resource actions are indicated with the following symbols:
 Terraform will perform the following actions:  
 
   # aws_instance.web will be created  
-  \+ resource "aws_instance" "web" \{  
+  \+ resource "aws_instance" "web" {  
       \+ ami                          = "ami-0ca5c3bd5a268e7db"  
       \+ arn                          = (known after apply)  
       \+ associate_public_ip_address  = (known after apply)  
@@ -74,7 +74,7 @@ Terraform will perform the following actions:
       \+ subnet_id                    = (known after apply)  
       \+ tags                         = {  
           \+ "Name" = "HelloWorld"  
-        \}  
+        }  
       \+ tenancy                      = (known after apply)  
       \+ vpc_security_group_ids       = (known after apply)  
 
