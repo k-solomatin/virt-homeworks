@@ -18,7 +18,8 @@ https://github.com/k-solomatin/virt-homeworks/tree/master/07-terraform-02-syntax
 
 ### Листинг  
 
-  ~/DevOpsStudy/virt-homeworks/07-terraform-02-syntax/terraform   master *1 ❯ terraform init  
+  ~/DevOpsStudy/virt-homeworks/07-terraform-02-syntax/terraform   master *1 ❯ terraform init
+
 Initializing the backend...  
 
 Initializing provider plugins...  
@@ -37,13 +38,13 @@ commands will detect it and remind you to do so if necessary.
 
 
   ~/DevOpsStudy/virt-homeworks/07-terraform-02-syntax/terraform   master *1 ❯ terraform plan  
-
+```html
 An execution plan has been generated and is shown below.  
 Resource actions are indicated with the following symbols:  
-  \+ create
+  + create
 
 Terraform will perform the following actions:  
-```html
+
   # aws_instance.web will be created  
   + resource "aws_instance" "web" {  
       + ami                          = "ami-0ca5c3bd5a268e7db"  
