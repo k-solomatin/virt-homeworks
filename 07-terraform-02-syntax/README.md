@@ -40,7 +40,7 @@ commands will detect it and remind you to do so if necessary.
 
 An execution plan has been generated and is shown below.  
 Resource actions are indicated with the following symbols:  
-  + create  
+  \+ create  \
 
 Terraform will perform the following actions:  
 
