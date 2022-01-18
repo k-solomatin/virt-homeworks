@@ -43,7 +43,7 @@ Resource actions are indicated with the following symbols:
   \+ create
 
 Terraform will perform the following actions:  
-```json
+```html
   # aws_instance.web will be created  
   + resource "aws_instance" "web" {  
       + ami                          = "ami-0ca5c3bd5a268e7db"  
@@ -142,7 +142,7 @@ can't guarantee that exactly these actions will be performed if
 
 
   ~/DevOpsStudy/virt-homeworks/07-terraform-02-syntax/terraform   master *1 ❯ terraform apply  
-
+```json
 An execution plan has been generated and is shown below.  
 Resource actions are indicated with the following symbols:  
   + create  
@@ -247,6 +247,6 @@ aws_instance.web: Still creating... [20s elapsed]
 aws_instance.web: Creation complete after 28s [id=i-0b0a9da8b816e7f1c]  
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.  
-
+```
 
 ---
