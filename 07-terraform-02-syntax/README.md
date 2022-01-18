@@ -142,7 +142,7 @@ can't guarantee that exactly these actions will be performed if
 
 
   ~/DevOpsStudy/virt-homeworks/07-terraform-02-syntax/terraform   master *1 ❯ terraform apply  
-```json
+```html
 An execution plan has been generated and is shown below.  
 Resource actions are indicated with the following symbols:  
   + create  
